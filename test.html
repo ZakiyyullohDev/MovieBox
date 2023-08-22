@@ -1,0 +1,69 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Pul kursi</title>
+</head>
+<body>
+    <h1>Pul Kursi</h1>
+    <p id="kurs">Pul kursi yuklanmoqda...</p>
+
+    <script>
+        const latest = 'https://api.exchangeratesapi.io/latest?base=USD'
+        const apiKey = '94cb025bd9d268a066a892b65a08ff43'
+        // Pul kursini yuklash va ko'rsatish
+        function updateExchangeRate() {
+            fetch(`https://api.exchangeratesapi.io/${latest}?${apiKey}=USD`)
+                .then(response => response.json())
+                .then(data => console.log(data))
+                // {
+                //     const exchangeRate = data.rates.uzs;
+                //     const kursElement = document.getElementById('kurs');
+                //     kursElement.textContent = '1 USD = ' + exchangeRate + ' UZS';
+                // }
+                .catch(error => {
+                    console.error('Pul kursini yuklashda xato:', error);
+                });
+        }
+
+        // Pul kursini avtomatik ravishda yangilash
+        updateExchangeRate();
+        setInterval(updateExchangeRate, 60000); // Har bir daqiqada bir marta yangilash
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pul kursi</title>
+</head>
+
+<body>
+    <h1>Pul Kursi</h1>
+    <p id="kurs">Pul kursi yuklanmoqda...</p>
+
+    <script>
+        const latest = 'latest?base=USD';
+        const apiKey = '9a83109a04f206757398bfc7e0f606cd';
+
+        function updateExchangeRate() {
+            fetch(`http://api.exchangeratesapi.io/${latest}&access_key=${apiKey}`)
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data); // Print the API response to the console
+                    const exchangeRate = data.rates.YOUR_CURRENCY_CODE; // Replace YOUR_CURRENCY_CODE
+                    const kursElement = document.getElementById('kurs');
+                    kursElement.textContent = '1 USD = ' + exchangeRate + ' YOUR_CURRENCY_SYMBOL'; // Replace YOUR_CURRENCY_SYMBOL
+                })
+                .catch(error => {
+                    console.error('Pul kursini yuklashda xato:', error);
+                });
+        }
+
+        updateExchangeRate();
+        setInterval(updateExchangeRate, 60000); // Update every minute
+    </script>
+</body>
+
+</html>

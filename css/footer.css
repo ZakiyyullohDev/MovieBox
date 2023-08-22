@@ -1,0 +1,124 @@
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/inter-v2-latin_cyrillic-regular.woff2") format("woff2"),
+    url("../fonts/inter-v2-latin_cyrillic-regular.woff") format("woff"); 
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/inter-v2-latin_cyrillic-500.woff2") format("woff2"),
+    url("../fonts/inter-v2-latin_cyrillic-500.woff") format("woff"); 
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/inter-v2-latin_cyrillic-700.woff2") format("woff2"),
+    url("../fonts/inter-v2-latin_cyrillic-700.woff") format("woff"); 
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #fff;
+    color: #222;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1056px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* footer-star */
+
+.social-ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left: 404px;
+    align-items: center;
+    list-style-type: none;
+}
+
+.social-li {
+    margin: 0;
+    padding: 0;
+    margin-right: 49px;
+    margin-bottom: 36px;
+}
+
+.social-li:last-child {
+    margin-right: 0;
+    padding: 0;
+}
+
+.social-li img {
+    display: block;
+}
+
+.link {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left: 284px;
+    list-style-type: none;
+}
+
+.link-li {
+    margin: 0;
+    padding: 0;
+    margin-right: 48px;
+    margin-bottom: 36px;
+}
+
+.link-li a {
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+.copy-peregraph {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    margin-left: 350px;
+    margin-bottom: 63px;
+}

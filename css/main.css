@@ -1,0 +1,262 @@
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/inter-v2-latin_cyrillic-regular.woff2") format("woff2"),
+    url("../fonts/inter-v2-latin_cyrillic-regular.woff") format("woff"); 
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/inter-v2-latin_cyrillic-500.woff2") format("woff2"),
+    url("../fonts/inter-v2-latin_cyrillic-500.woff") format("woff"); 
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/inter-v2-latin_cyrillic-700.woff2") format("woff2"),
+    url("../fonts/inter-v2-latin_cyrillic-700.woff") format("woff"); 
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #fff;
+    color: #222;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*main-start*/
+
+/* chat */
+
+/* chat */
+
+.menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-top: 70px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 44px;
+}
+
+.menu-a {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 18px;
+    color: #b91c1c;
+    font-weight: bold;
+    margin-bottom: 38px;
+    align-items: center;
+    text-decoration: none;
+}
+
+.menu-img {
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+}
+
+/*featured-start*/
+
+.movie-ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    /* justify-content: space-between; */
+}
+
+.movie-li {
+    margin-right: 40px;
+}
+
+.movie-li:last-child {
+    margin: 0;
+    padding: 0;
+}
+
+.movie-li img {
+    border-radius: 15px;
+}
+
+.movie-li-a {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.opacity-p {
+    margin: 0;
+    padding: 0;
+    color: #9CA3AF;
+    text-decoration: none;
+}
+
+.imdb {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.imdb-p{
+    margin: 0;
+    padding: 0;
+    color: #000;
+    margin-right: 15px;
+}
+
+.imdb-img {
+    margin: 0;
+    padding: 0;
+    margin-right: 10px;
+}
+
+.tomato{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.tomato p {
+    margin: 0;
+    padding: 0;
+}
+
+.tomato img {
+    margin-right: 10px;
+}
+
+/*featured-end*/
+
+/*videos*/
+
+.videos-link p {
+
+    text-decoration: none;
+}
+
+.videos-ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+.videos-ul p{
+    text-decoration: none;
+}
+
+.videos-li {
+    margin: 0;
+    padding: 0;
+    margin-right: 48px;
+    text-decoration: none;
+}
+
+.videos-li:last-child {
+    margin: 0;
+    padding: 0;
+}
+
+.videos-p {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* videos-end */
+
+/* casts */
+
+.casts-ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-bottom: 120px;
+    list-style-type: none;
+}
+
+.casts-li {
+    margin: 0;
+    padding: 0;
+    margin-right: 48px;
+}
+
+.casts-li:last-child {
+    margin: 0;
+    padding: 0;
+}
+
+.casts-p {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+}
+/* casts-end */

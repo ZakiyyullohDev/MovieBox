@@ -1,0 +1,174 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-v2-latin_cyrillic-regular.woff2") format("woff2"),
+  url("../fonts/inter-v2-latin_cyrillic-regular.woff") format("woff"); 
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/inter-v2-latin_cyrillic-500.woff2") format("woff2"),
+  url("../fonts/inter-v2-latin_cyrillic-500.woff") format("woff"); 
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-v2-latin_cyrillic-700.woff2") format("woff2"),
+  url("../fonts/inter-v2-latin_cyrillic-700.woff") format("woff"); 
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #222;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* slider */
+
+.slider-df{
+  display: flex;
+  transform: translateY(10px);
+  justify-content: space-between;
+}
+
+.slider {
+  overflow: hidden;
+  max-width: 1100px;
+  max-height: 540px;
+}
+
+.slider-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.slider-item {
+  width: 751px;
+  height: 380px;
+  display: none;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+#slider-ctrl-1:checked ~ .slider-list .slider-item:nth-child(1), 
+#slider-ctrl-2:checked ~ .slider-list .slider-item:nth-child(2), 
+#slider-ctrl-3:checked ~ .slider-list .slider-item:nth-child(3), 
+#slider-ctrl-4:checked ~ .slider-list .slider-item:nth-child(4) {
+  display: block;
+}
+
+.slider-img {
+  margin: 0;
+  padding: 0;
+  width: 751px;
+  height: 380px;
+  /* padding-left: 20px; */
+  display: block;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  border: transparent 8px outset;
+}
+
+#slider-ctrl-1:checked ~ .slider-ctrls label:nth-child(1), 
+#slider-ctrl-2:checked ~ .slider-ctrls label:nth-child(2), 
+#slider-ctrl-3:checked ~ .slider-ctrls label:nth-child(3), 
+#slider-ctrl-4:checked ~ .slider-ctrls label:nth-child(4) {
+  margin-bottom: 20px;
+  border: 2px solid #fff;
+  background-color: #BE123C;  
+}
+
+.slider-ctrls label {
+  width: 45px;
+  height: 25px;
+  font-size: 0;
+  display: block;
+  cursor: pointer;
+  margin: 5px 3px;
+  border-radius: 50px;
+  margin-bottom: 50px;
+  background-color: #fff;
+  border: 2px solid #BE123C;
+  transition: all 0.5s ease-in-out;
+}
+
+.slider-ctrls label:hover {
+  border: 5px solid #fff;
+  background-color: #BE123C;   
+}
+
+.slider-ctrls{
+  /* align-items: center; */
+  margin-left: 620px;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+
+.container-2 {
+  /* position: relative; */
+  width: 250px; /* Set the desired width of the container */
+  height: 370px;
+}
+
+.img {
+  /* display: block; */
+  max-width: 100%; /* Ensure the image does not exceed the container's width */
+}
+
+.text {
+  top: 0;
+  left: 0;
+  width: 100%; /* Make the paragraph element stretch to the full width of the container */
+  margin: 0;
+  padding: 10px; /* Add some padding for better visibility */
+  white-space: nowrap; /* Prevent words from wrapping */
+  overflow: hidden; /* Clip any content that overflows the boundaries */
+  text-overflow: ellipsis; /* Add ellipsis (...) for the text that overflows */
+}
